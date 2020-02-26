@@ -7,14 +7,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- link para estilos propios -->
-    <link rel="stylesheet" href="/assets/css/estylos.css">
+    <link rel="stylesheet" href="../assets/css/estylos.css">
+
+
+    <!-- link de bootstrap -->
+    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
 
     <title>Bugtracker</title>
 </head>
 
 <body>
-    <div>
-
+    <div class="lower_card v-card v-sheet theme--light">
+        <div class="v-tabs v-tabs--fixed-tabs theme--light">
+            <div role="tablist" class="v-item-group theme--light v-slide-group v-tabs-bar v-tabs-bar--is-mobile primary--text" data-booted="true">
+                <div class="v-slide-group__prev v-slide-group__prev--disabled">
+                    <!---->
+                </div>
+                <div class="v-slide-group__wrapper">
+                    <div class="v-slide-group__content v-tabs-bar__content">
+                        <div class="v-tabs-slider-wrapper" style="height: 2px; left: 0px; width: 214px;">
+                            <div class="v-tabs-slider"></div>
+                        </div><a tabindex="0" href="#tab-1" aria-selected="true" role="tab" class="tabs v-tab activo v-tab--active">Iniciar sesión</a><a tabindex="0" href="#tab-2" aria-selected="false" role="tab" class="tabs v-tab v-tab--disabled">Regístrate</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="v-window v-item-group theme--light v-tabs-items">
+            <div class="v-window__container" style="">
+                <div class="v-window-item container__tabs v-window-item--active" id="tab-1" style="">
+                    <div class="title">ingresa a tu cuenta</div>
+                    <div class="v-card__text form">
+                        <form>
+                            <div class="row">
+                                <div xs="12" class="col-sm-12 col-md-12 col-12" style="margin: 0px; padding: 0px;">
+                                    <div class="v-input v-input--has-state theme--light v-text-field v-text-field--filled v-text-field--is-booted v-text-field--enclosed error--text">
+                                        <div class="v-input__control">
+                                            <div class="v-input__slot">
+                                                <div class="v-text-field__slot"><label for="input-27" class="v-label theme--light error--text" style="left: 0px; right: auto; position: absolute;">Usuario</label><input id="input-27" type="text"></div>
+                                            </div>
+                                            <div class="v-text-field__details">
+                                                <div class="v-messages theme--light error--text" role="alert">
+                                                    <div class="v-messages__wrapper">
+                                                        <div class="v-messages__message">Usuario es requerido</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div xs="12" class="col-sm-12 col-md-12 col-12" style="margin: 0px; padding: 0px;">
+                                    <div class="v-input v-input--has-state theme--light v-text-field v-text-field--filled v-text-field--is-booted v-text-field--enclosed error--text">
+                                        <div class="v-input__control">
+                                            <div class="v-input__slot">
+                                                <div class="v-text-field__slot"><label for="input-30" class="v-label theme--light error--text" style="left: 0px; right: auto; position: absolute;">Contraseña</label><input id="input-30" type="password"></div>
+                                            </div>
+                                            <div class="v-text-field__details">
+                                                <div class="v-messages theme--light error--text" role="alert">
+                                                    <div class="v-messages__wrapper">
+                                                        <div class="v-messages__message">Contraseña es requerida</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fotgot_password">Olvidé mis datos de acceso</div>
+                                <div style="width: 100%;"><button type="button" class="v-btn v-btn--contained theme--light v-size--default primary uppercase fullwith"><span class="v-btn__content">Ingresar</span></button></div>
+                                <div class="column_data_inf0">
+                                    <div class="info_img"></div>
+                                    <div class="info_text">Ingresa con los datos de alumno o egresado de la Universidad del Pacífico</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="v-window-item container__tabs" id="tab-2" style="display: none;"></div>
+            </div>
+        </div>
+        <!---->
     </div>
 </body>
 
