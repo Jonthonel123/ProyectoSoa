@@ -40,7 +40,10 @@ body {
 
 .error--text {
     color: #f50b0b !important;
-    caret-color: #f50b0b !important;
+}
+
+.error--text_la {
+    color: #000;
 }
 
 .v_label {
