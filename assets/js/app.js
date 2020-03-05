@@ -36,11 +36,22 @@ $(function() {
         })
     })
     $input_27.on('click', function(e) {
-        $v_label_1.css({
-            'left': '105px',
+            $v_label_1.css({
+                'left': '105px',
 
+            })
         })
-    })
+        // $input_27.key('keyup', function(e) {
+        //         $mensaje_1.css({
+        //             'opacity': '0'
+        //         })
+        //     })
+        // $input_27.key('keyup', function(e) {
+        //     $mensaje_1.css({
+        //         'opacity': '1'
+        //     })
+        // })
+
 
     $input_30.on('click', function(e) {
         $v_label_1.css({
@@ -77,6 +88,33 @@ $(function() {
         })
     })
 
+
+
+
+
+
+
+    var $registerForm = $('#resgistration')
+    if ($registerForm.length) {
+        $registerForm.validate({
+            rules: {
+                name: {
+                    required: true
+                },
+                contraseña: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: 'El usuario es requerido'
+                },
+                contraseña: {
+                    required: 'Ingrese su contraseña'
+                }
+            }
+        })
+    }
 
 
 })

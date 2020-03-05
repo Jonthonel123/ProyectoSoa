@@ -31,79 +31,52 @@
             <div class="v-window__container">
                 <div class="v-window-item container__tabs v-window-item--active" id="tab-1">
                     <div class="title">ingresa a tu cuenta</div>
-                    <div class="v-card__text form">
-                        <form>
-                            <div class="row" style="text-align: center;">
-                                <div xs="12" class="col-sm-12 col-md-12 col-12" style="margin: 0px;padding: 0px;">
-                                    <div class="v-input v-input--has-state theme--light v-text-field v-text-field--filled v-text-field--is-booted v-text-field--enclosed error--text">
-                                        <div class="v-input__control">
-                                            <div class="v-input__slot">
-                                                <div class="v-text-field__slot">
-                                                    <label for="input_27" class="v_label_1 theme--light error--text_la" style=" left: 100px;right: auto;position: absolute;top: 10px;">
-                                                        Usuario
-                                                    </label>
-                                                    <input id="input_27" type="text" style="height: 58px;width: 300px;background: #dddddd;border: 1px solid #FF2700;padding-top: 22px;padding-left: 6px;">
-                                                </div>
-                                            </div>
-                                            <div class="v-text-field__details">
-                                                <div class="v-messages theme--light error--text" role="alert">
-                                                    <div class="v-messages__wrapper">
-                                                        <div class="v-messages__message mensaje_1">Usuario es requerido</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div xs="12" class="col-sm-12 col-md-12 col-12" style="margin: 0px; padding: 0px;">
-                                    <div class="v-input v-input--has-state theme--light v-text-field v-text-field--filled v-text-field--is-booted v-text-field--enclosed error--text">
-                                        <div class="v-input__control">
-                                            <div class="v-input__slot">
-                                                <div class="v-text-field__slot">
-                                                    <label for="input_30" class="v_label_2 theme--light error--text_la" style="left: 100px; right: auto; position: absolute;top: 10px;">
-                                                        Contraseña
-                                                    </label>
-                                                    <input id="input_30" type="password" style="height: 58px;width: 300px;background: #dddddd;border: 1px solid #FF2700;padding-top: 22px;padding-left: 6px;">
-                                                </div>
-                                            </div>
-                                            <div class="v-text-field__details">
-                                                <div class="v-messages theme--light error--text" role="alert">
-                                                    <div class="v-messages__wrapper">
-                                                        <div class="v-messages__message mensaje_2">Contraseña es requerida</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="fotgot_password">Olvidé mis datos de acceso</div>
-                                <div style="width: 100%;">
-                                    <button type="button" class="v-btn v-btn--contained theme--light v-size--default primary uppercase fullwith btn_cambios">
+                    <div class="v-card__text panel-body form">
+                        <form id="registration" action="post">
+                            <div class="primer_input">
+                                <input class="primero" type="text" name="name" autocomplete="off" required>
+                                <label class="label1 label-name" for="name">
+                                        <span class="content-name ">Nombre</span>
+                                    </label>
+                            </div>
+                            <div class="segundo_input">
+                                <input class="segundo" type="password" name="contraseña" autocomplete="off" required>
+                                <label class="label2 label-name2" for="contraseña">
+                                        <span class="content-name2 ">Contraseña</span>
+                                    </label>
+
+                            </div>
+
+
+                            <div class="fotgot_password">Olvidé mis datos de acceso</div>
+                            <div style="width: 100%;">
+                                <button type="submit" class="v-btn v-btn--contained theme--light v-size--default primary uppercase fullwith btn_cambios">
                                     <span class="v-btn__content">
                                         Ingresar
                                     </span>
                                 </button>
-                                </div>
-                                <div class="column_data_inf0">
-                                    <div class="info_img"></div>
-                                    <div class="info_text">Ingresa con los datos del usuario correspondiente</div>
-                                </div>
                             </div>
-                        </form>
+                            <div class="column_data_inf0">
+                                <div class="info_img"></div>
+                                <div class="info_tex">Ingresa con los datos del usuario correspondiente</div>
+                            </div>
                     </div>
+                    </form>
                 </div>
-                <div class="v-window-item container__tabs" id="tab-2" style="display: none;"></div>
             </div>
+            <div class="v-window-item container__tabs" id="tab-2" style="display: none;"></div>
         </div>
+    </div>
     </div>
 
 
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js "></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js " integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=" anonymous "></script>
 
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-
-<script src="../assets/js/app.js">
+<script src="../assets/js/app.js ">
 </script>
 
 </html>
