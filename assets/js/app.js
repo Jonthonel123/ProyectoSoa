@@ -94,7 +94,7 @@ $(function() {
 
 
 
-    var $registerForm = $('#resgistration')
+    var $registerForm = $('#registration')
     if ($registerForm.length) {
         $registerForm.validate({
             rules: {
